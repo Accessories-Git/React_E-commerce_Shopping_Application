@@ -1,0 +1,28 @@
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import ProductDetails from "./pages/ProductDetails";
+import Cart from "./pages/Cart";
+import NotFound from "./pages/NotFound";
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <main className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+      <footer className="footer">
+        <p>Cartly &middot; Built with React components, React Hooks, API
+integration, React Router, and Redux state management</p>
+      </footer>
+    </>
+  );
+}
+
+export default App;

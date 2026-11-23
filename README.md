@@ -30,5 +30,5 @@ npm run preview   # preview the production build locally
 
 ## Live Project Link
 
-Add deployed link here: https://frabjous-swan-fdc0b7.netlify.app
+Deployed link here: https://frabjous-swan-fdc0b7.netlify.app
 
